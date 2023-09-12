@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Sistema Escolar v2.0</title>
+</head>
+
+<body>
+
+  <div id="central">
+    <!-- Inicio das notas -->
+  <form action="" id="formulario" class="container">
+    <h1 class="titulo-estilizado">Sistema Escolar v2.0</h1>
+    <div class="input-container">
+        <div class="input-content">
+            <div class="input-dist">
+                <div class="input-type">
+                    <input placeholder="Primeira nota" required="" type="number" id="input-is" class="nota1" >  
+                    <input placeholder="Segunda nota" required="" type="number" id="input-is" class=" nota2">  
+                    <input placeholder="Terceira nota" required="" type="number" id="input-is" class="nota3">  
+                </div>
+            </div>
+        </div>
+
+   <!-- inicio nome -->
+  <div class="input__container">
+    <div class="shadow__input"></div>
+    <button class="input__button__shadow">
+      <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+        <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+      </svg>
+    </button>
+    <input id="user" type="text" name="text" class="input__search" placeholder="Nome do aluno">
+  </div>
+  <!-- Final nome -->
+
+    </div>
+  </form>
+  <!-- Fim das notas -->
+  
+
+
+  <!-- Janela modal -->
+  <div class="modal-container"> 
+    
+    <div class="modal">
+      <h2>Info</h2>
+      <hr>
+      <span id="resultado"></span>
+      <hr>
+      <div class="btns">
+        <button class="btnClose"onclick="closeModal()">Fechar</button>
+      </div>
+  </div>
+
+</div>
+<!-- Fim janela modal -->
+  </div>
+
+  <script src="js/escolar.js"></script>
+</body>
+
+</html>
